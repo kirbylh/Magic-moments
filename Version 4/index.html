@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Magic Moment Video Voting</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://tools.pinpoll.com/global.js" async></script>
+
+        <style>
+            body{
+                text-align: center;
+                align-items: center;
+                align-items: center;
+                
+            }
+
+
+            img{
+                height:100px;
+            }
+
+            .poll{
+                margin-top:2%;
+                width:80%;
+                margin:auto;
+            }
+
+            .mobile{
+                display:none;
+            }
+
+            @media screen and (max-width:600px) {
+                .poll{
+                    display: none;
+                }
+
+                .mobile{
+                    display:block;
+                    margin-top:2%;
+                }
+            }
+               
+            #saudi{
+                height: 75px;
+                margin-left: 1%;
+                margin-top:1%;
+            }
+            #logo{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #logo>img{
+                margin:2%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="logo">
+            <img id="afc" src="https://www.fifplay.com/img/public/afc-asian-cup-2023-logo.png" alt="">
+            <img id="saudi" src="VS.png" alt="">
+        </div>
+        
+        <div class="poll">
+            <div data-pinpoll-id="250551" data-mode="poll"></div>
+        </div>
+
+        <div class="mobile">
+            <div data-pinpoll-id="251262" data-mode="poll"></div>  
+        </div>
+
+        
+    </body>
+</html>
