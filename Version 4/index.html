@@ -28,6 +28,9 @@
                 display:none;
             }
 
+            #bannerMobile{
+                display:none;
+            }
             @media screen and (max-width:600px) {
                 .poll{
                     display: none;
@@ -36,6 +39,16 @@
                 .mobile{
                     display:block;
                     margin-top:2%;
+                }
+
+                #banner{
+                    display: none;
+                }
+
+                #bannerMobile{
+                    display: block;
+                    width:100%;
+                    object-fit: cover;
                 }
             }
                
@@ -58,23 +71,26 @@
                 width:80%;
                 margin-bottom:2%;
                 margin-top:3%;
-                object-fit: cover;;
+               object-fit: cover;
             }
+
+            
         </style>
     </head>
     <body>
         
-        <div class="whole">
-            <img id="banner" src="Poll_banner.jpeg" alt="">
         
-            <div class="poll">
-                <div data-pinpoll-id="250551" data-mode="poll"></div>
-            </div>
+        <a href="../index.html"><img id="banner" src="Poll_banner.jpeg" alt=""></a>
+        <a href="../index.html"><img id="bannerMobile" src="..//BannerShort.jpeg" alt=""></a>
     
-            <div class="mobile">
-                <div data-pinpoll-id="251262" data-mode="poll"></div>  
-            </div>
+        <div class="poll">
+            <div data-pinpoll-id="250551" data-mode="poll"></div>
         </div>
+
+        <div class="mobile">
+            <div data-pinpoll-id="251262" data-mode="poll"></div>  
+        </div>
+        
        
 
         
